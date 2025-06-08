@@ -5,6 +5,7 @@ title: Important Clarification & Review
 
 <div class="content-wrapper">
 
+    <h2>Important Clarification & Review</h2>
 
     <p class="intro-text">Adding another clarification since this person is still lying.</p>
 
@@ -22,7 +23,7 @@ title: Important Clarification & Review
 
     <p>Had booked for a birthday party in July - gave the deposit on 27th May and decided to not go ahead a couple of days later due to travel plans coming up. This is more than a month before the date confirmed but the owner has decided to still keep the deposit paid citing 'terms and conditions'. This is just a whatsapp message saying non refundable deposit. The whole setup is extremely unprofessional with unreasonable costs, small space and smaller minded owner. Happy to not have gone ahead with this, have heard reviews from others also about how the DIY activities are boring.</p>
 
-    <p><strong>Link to review:</strong> <a href="https://maps.app.goo.gl/ZqrCEBttTbbwbN9J9" target="_blank" rel="noopener noreferrer">Click Here</a></p>
+    <p><strong>Link to current review:</strong> <a href="https://maps.app.goo.gl/ZqrCEBttTbbwbN9J9" target="_blank" rel="noopener noreferrer">Google Review Link</a></p>
 
 
 
@@ -33,7 +34,7 @@ title: Important Clarification & Review
     <div class="image-gallery">
         <figure>
             <img src="{{ '/assets/images/review01.jpeg' | relative_url }}" alt="1-star Google review hidden by the owner">
-            <figcaption>previous 1-star review on Google</figcaption>
+            <figcaption>Previous 1 star review on Google reviews</figcaption>
         </figure>
         <figure>
             <img src="{{ '/assets/images/whatsapp01.jpeg' | relative_url }}" alt="Screengrab of WhatsApp conversation with owner">
