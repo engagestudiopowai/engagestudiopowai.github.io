@@ -33,7 +33,7 @@ title: Important Clarification & Review
     <div class="image-gallery">
         <figure>
             <img src="{{ '/assets/images/review01.jpeg' | relative_url }}" alt="1-star Google review hidden by the owner">
-            <figcaption>1-star review hidden by the owner on Google</figcaption>
+            <figcaption>previous 1-star review on Google</figcaption>
         </figure>
         <figure>
             <img src="{{ '/assets/images/whatsapp01.jpeg' | relative_url }}" alt="Screengrab of WhatsApp conversation with owner">
@@ -41,4 +41,4 @@ title: Important Clarification & Review
         </figure>
     </div>
 
-</div> {# This closing div must be at the very end to wrap all content. #}
+</div>
