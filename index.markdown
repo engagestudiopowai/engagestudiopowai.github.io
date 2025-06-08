@@ -22,7 +22,6 @@ Owner is a money grabbing scam artist.
 
 <p>Had booked for a birthday party in July - gave the deposit on 27th May and decided to not go ahead a couple of days later due to travel plans coming up. This is more than a month before the date confirmed but the owner has decided to still keep the deposit paid citing 'terms and conditions'. This is just a whatsapp message saying non refundable deposit. The whole setup is extremely unprofessional with unreasonable costs, small space and smaller minded owner. Happy to not have gone ahead with this, have heard reviews from others also about how the DIY activities are boring.</p>
 
-</div>
 
 <h2>Screenshots</h2>
 
