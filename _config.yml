@@ -1,0 +1,11 @@
+title: Engage-The Creative Studio
+email:
+description: >-
+  The brand only keeps 5 star reviews on google reviews, and hides the rest.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
