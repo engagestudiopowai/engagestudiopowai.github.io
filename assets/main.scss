@@ -1,0 +1,17 @@
+---
+---
+
+// Import Minima's base styles
+@import "minima";
+
+// Import your custom component styles
+@import "custom-header";
+@import "image-styles";
+@import "footer-styles";
+
+// General site-wide styles (e.g., body padding for fixed header)
+body {
+    padding-top: 100px; /* Adjust this value to match your fixed header's total height */
+    /* You can measure your header height in developer tools after fixing. */
+    /* If content still goes under the header, increase this value. */
+}

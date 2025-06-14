@@ -1,64 +1,88 @@
 .site-footer {
-    background-color: #f8f8f8; /* Light grey background */
-    color: #555;
-    padding: 40px 0;
-    margin-top: 50px; /* Space above the footer */
-    border-top: 1px solid #eee; /* Light border at the top */
+    border-top: 1px solid #e8e8e8;
+    padding: 30px 0;
+    background-color: #f8f8f8; /* Light background for footer */
+    color: #777;
+    font-size: 0.9em;
 }
 
-.site-footer .wrapper {
+.footer-content {
     display: flex;
-    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 30px; /* Space between footer sections */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-section {
-    flex: 1; /* Allow sections to grow and shrink */
-    min-width: 250px; /* Minimum width for sections before stacking */
-    max-width: 30%; /* Adjust width as needed */
+    flex: 1;
+    min-width: 250px; /* Minimum width before wrapping */
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 1.2em;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    a {
+        color: #555;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            color: #007bff;
+        }
+    }
 }
 
-.footer-section h3 {
-    color: #333;
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
-
-.footer-section p {
-    /* Apply general p styles */
-    font-size: 0.9em;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Styles for the single-line Quick Links */
+/* Quick Links (Sitemap) Section */
 .footer-section.sitemap {
-    display: flex;
+    display: flex; /* Make the header and links go horizontal if space allows */
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center; /* Vertically align the text and links */
+    margin-top: 0; /* Adjust margin if needed, depends on overall footer design */
+    flex-direction: column; /* Stack header and ul vertically by default */
+    align-items: flex-start; /* Align contents to the start when stacked */
 }
 
 .footer-section.sitemap .quick-links-header {
-    margin-right: 10px;
+    margin-right: 10px; /* Space between header and links if on same line */
     font-weight: bold;
     color: #333;
-    white-space: nowrap;
-    margin-bottom: 0;
+    white-space: nowrap; /* Prevent "Quick Links:" from breaking */
+    margin-bottom: 10px; /* Space below header */
 }
 
 .footer-section.sitemap ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* Makes list items go horizontal */
+    flex-wrap: wrap; /* Allow links to wrap to next line if necessary */
+    justify-content: flex-start; /* Align links to the start */
 }
 
 .footer-section.sitemap ul li {
-    margin: 0 5px;
+    margin: 0 5px; /* Adjust spacing between links */
     &:not(:last-child)::after {
-        /* This is SCSS-specific nesting */
+        /* SCSS for the pipe separator */
         content: "|";
         margin-left: 5px;
         color: #999;
@@ -69,94 +93,46 @@
     color: #555;
     text-decoration: none;
     transition: color 0.3s ease;
-    white-space: nowrap;
+    white-space: nowrap; /* Keep individual link text on one line */
 }
 
 .footer-section.sitemap ul li a:hover {
     color: #007bff;
 }
 
-/* Responsive adjustments */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #e8e8e8;
+    color: #999;
+}
+
+/* Responsive adjustments for footer sections */
 @media (max-width: 768px) {
-    .site-footer .wrapper {
-        flex-direction: column; /* Stack sections vertically */
-        align-items: center;
-        text-align: center;
+    .footer-content {
+        flex-direction: column; /* Stack footer sections vertically */
+        padding: 0 15px; /* Adjust padding for mobile */
     }
 
     .footer-section {
-        min-width: 100%; /* Full width on small screens */
-        max-width: 100%;
-        margin-bottom: 20px; /* Space between stacked sections */
+        min-width: 100%; /* Take full width on mobile */
+        text-align: center; /* Center content in sections */
+
+        h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
     }
 
-    /* Ensure Quick Links remain inline but wrap gracefully on small screens */
-    /* Styles for the single-line Quick Links */
     .footer-section.sitemap {
-        display: flex; /* Make this a flex container to align "Quick Links:" and the ul */
-        flex-wrap: wrap; /* Allow content to wrap if needed */
-        align-items: center; /* Vertically align "Quick Links:" text with the links */
-    }
-
-    .footer-section.sitemap .quick-links-header {
-        margin-right: 10px; /* Space between "Quick Links:" and the first link */
-        font-weight: bold; /* Make "Quick Links:" bold if desired */
-        color: #333; /* Match heading color or choose another */
-        white-space: nowrap; /* Prevent "Quick Links:" from breaking */
-        margin-bottom: 0; /* Remove default paragraph margin */
+        align-items: center; /* Center items when stacked on mobile */
     }
 
     .footer-section.sitemap ul {
-        list-style: none; /* Remove bullet points */
-        padding: 0;
-        margin: 0; /* Remove default ul margin */
-        display: flex; /* Use flexbox to put items in a row */
-        flex-wrap: wrap; /* Allow links to wrap to the next line if space is limited */
-        /* Removed justify-content: center and align-items: center here as the parent .sitemap handles alignment */
-    }
-
-    .footer-section.sitemap ul li {
-        margin: 0 5px; /* Adjust space between links */
-        /* Add a pipe separator using a pseudo-element */
-        &:not(:last-child)::after {
-            content: "|";
-            margin-left: 5px; /* Space between link and separator */
-            color: #999; /* Color for the separator */
-        }
-    }
-
-    .footer-section.sitemap ul li a {
-        color: #555;
-        text-decoration: none;
-        transition: color 0.3s ease;
-        white-space: nowrap; /* Prevent links from breaking mid-word */
-    }
-
-    .footer-section.sitemap ul li a:hover {
-        color: #007bff; /* Example hover color */
-    }
-
-    /* ... (footer-bottom and responsive adjustments remain the same) ... */
-
-    @media (max-width: 768px) {
-        /* ... (existing responsive adjustments for .site-footer .wrapper and .footer-section remain the same) ... */
-
-        .footer-section.sitemap {
-            flex-direction: column; /* Stack "Quick Links:" and the links on small screens */
-            align-items: center; /* Center them */
-        }
-        .footer-section.sitemap .quick-links-header {
-            margin-right: 0; /* Remove horizontal margin */
-            margin-bottom: 5px; /* Add space below "Quick Links:" header */
-        }
-        .footer-section.sitemap ul {
-            justify-content: center; /* Ensure links are centered */
-        }
-        .footer-section.sitemap ul li {
-            margin: 5px 8px; /* Adjust spacing for smaller screens */
-        }
-        .footer-section.sitemap ul li:not(:last-child)::after {
-            margin-left: 8px;
-        }
+        justify-content: center; /* Center links when stacked */
     }
 }
