@@ -1,11 +1,15 @@
-title: Engage-The Creative Studio
+title: Engage - The Creative Studio
 email:
 description: >-
-  The brand only keeps 5 star reviews on google reviews, and hides the rest.
-baseurl: "/review" # the subpath of your site, e.g. /blog
+  A premier creative studio in Mumbai offering unique event experiences and services.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://engagestudiopowai.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+author:
+  name: Engage Creative Studio
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag

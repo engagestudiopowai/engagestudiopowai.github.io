@@ -1,0 +1,48 @@
+.image-gallery {
+    display: flex; /* Enable Flexbox for the container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: center; /* Center items if they don't fill the full width */
+    gap: 20px; /* Space between the image columns */
+    margin-top: 30px; /* Some spacing above the image container */
+    margin-bottom: 30px; /* Some spacing below the image container */
+}
+
+.image-gallery figure {
+    flex: 1; /* Allows each figure to grow and shrink */
+    min-width: 300px; /* Minimum width before stacking, adjust as needed */
+    max-width: calc(
+        50% - 10px
+    ); /* Sets each figure to roughly 50% width minus half the gap */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 0; /* Remove default figure margin */
+    display: flex; /* Flex on figure to manage image and figcaption */
+    flex-direction: column; /* Stack image and caption */
+    align-items: center; /* Center content horizontally within the figure */
+    text-align: center; /* Ensure caption is centered */
+}
+
+.image-gallery figure img {
+    max-width: 100%; /* Ensures image scales down to fit its figure container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below image */
+    margin-bottom: 10px; /* Space between image and caption */
+}
+
+.image-gallery figure figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Responsive adjustments for small screens (e.g., mobile) */
+@media (max-width: 768px) {
+    /* Standard breakpoint for mobile */
+    .image-gallery {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Adjust gap for vertical stacking */
+    }
+
+    .image-gallery figure {
+        max-width: 100%; /* Make each figure take full width on small screens */
+        min-width: unset; /* Remove min-width restriction on small screens */
+    }
+}
