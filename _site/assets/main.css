@@ -793,9 +793,11 @@ table td {
 }
 
 .footer-section {
-  flex: 1;
+  flex: 1 1 30%;
   min-width: 250px; /* Minimum width before wrapping */
   margin-bottom: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 .footer-section h3 {
   font-size: 1.2em;
@@ -806,6 +808,8 @@ table td {
 .footer-section p {
   margin-bottom: 10px;
   line-height: 1.6;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .footer-section ul {
   list-style: none;
@@ -887,7 +891,7 @@ table td {
     padding: 0 15px; /* Adjust padding for mobile */
   }
   .footer-section {
-    min-width: 100%; /* Take full width on mobile */
+    min-width: 90%; /* Take full width on mobile */
     text-align: center; /* Center content in sections */
   }
   .footer-section h3 {
