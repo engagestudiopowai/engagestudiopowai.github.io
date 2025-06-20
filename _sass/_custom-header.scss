@@ -11,6 +11,10 @@
     z-index: 1000; // Standard high z-index
 }
 
+.custom-site-header h1 {
+    text-align: center;
+}
+
 .header-content-wrapper {
     display: flex; // Use flexbox for layout
     align-items: center; // Vertically align items in the center

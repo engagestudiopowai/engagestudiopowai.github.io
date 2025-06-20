@@ -4,9 +4,21 @@ title: Engage Studio Powai Review – Dishonest Practices, Unprofessional Setup
 description: A true account of a parent's experience with Engage Studio Powai. Learn how misleading terms, poor conduct, and money-first behavior led to a regrettable interaction.
 ---
 
+<div class="wrapper header-content-wrapper">
+    <div class="header-logo">
+        <img src="{{ "/assets/images/logo.jpg" | relative_url }}" alt="Engage The Creative Studio Logo">
+    </div>
+    <div class="header-text-content">
+        <p class="brand-address">
+            3rd Floor, podium parking, Lake Homes Private Rd,<br>
+            next to club house, opposite LAKE FLORENCE, homes,<br>
+            Powai, Mumbai, Maharashtra 400076
+        </p>
+    </div>
+</div>
+
 <div class="content-wrapper">
 
-    <h1>Engage Studio Powai – A Firsthand Review of a Misleading and Unprofessional Experience</h1>
 
     <hr />
 

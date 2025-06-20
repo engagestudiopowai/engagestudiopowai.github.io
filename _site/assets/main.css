@@ -658,6 +658,10 @@ table td {
   z-index: 1000;
 }
 
+.custom-site-header h1 {
+  text-align: center;
+}
+
 .header-content-wrapper {
   display: flex;
   align-items: center;
